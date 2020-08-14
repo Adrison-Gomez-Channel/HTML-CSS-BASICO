@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Pagina</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        body,
+        html {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .card {
+            /*  border: 1.2px solid #999; */
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .foto-perfil {
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid green;
+            width: 80px;
+            height: 80px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .info-persona {
+            text-align: right;
+        }
+
+        .info-persona h1 {
+            font-size: 40px;
+            color: green;
+        }
+
+        .info-persona h3 {
+            font-size: 16px;
+            font-weight: 600;
+            opacity: 0.5;
+            font-style: italic;
+        }
+
+        .separador {
+            margin-bottom: 20px;
+        }
+
+        .card>p {
+            font-size: 18px;
+        }
+
+        b {
+            color: green;
+        }
+
+        .preferencias {
+            display: flex;
+            justify-content: center;
+        }
+
+        .lista{
+            padding: 10px 30px;
+            color:black;
+        }
+
+        #lenguaje{
+            background-color: #88d3b8;
+        }
+        #gustos{
+            background-color: #d0f518;
+        }
+        .card>a{
+            margin-right: 5px;
+            padding: 10px 20px;
+            background-color: greenyellow;
+            border-radius: 30px;
+            color: black;
+            font-weight: bold;
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="header separador">
+            <img class="foto-perfil" src="assets/img/foto_perfil.jpg" alt="mi_foto_de_perfil">
+            <div class="info-persona">
+                <h1>Adrison Gomez</h1>
+                <h3>"adrisonjr.gomez@gmail.com"</h3>
+            </div>
+        </div>
+        <p class="separador">Soy <b>desarrollador</b> y <b>maestro</b>. Me gusta la musica, especialmente: </p>
+        <div class="preferencias separador">
+            <div id="gustos" class="lista">
+                <h4>Gustos Musicales</h4>
+                <ul>
+                    <li>Eletro Swing</li>
+                    <li>Salsa</li>
+                    <li>Merengue</li>
+                    <li>Pop</li>
+                </ul>
+            </div>
+            <div id="lenguaje" class="lista">
+                <h4>Lenguajes de Programacion</h3>
+                <ol>
+                        <li>JavaScript / TypeScript</li>
+                        <li>Java</li>
+                        <li>Php</li>
+                        <li>Python</li>
+                        <li>Dart</li>
+                    </ol>
+            </div>
+        </div>
+        <a href="/pages/contacto.html">Contactar</a>
+        <a href="/pages/perfil.html">Ver Perfil</a>
+        <a href="https://github.com/Ad0197">Ver GitHub</a>
+    </div>
+
+</body>
+
+</html>
